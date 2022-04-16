@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Shooter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main-play-area">
+        <img src="imgs/hero.red.png" id="hero" alt="hero">
+        <div class="game-info">
+            <h1 class="game-title">Space Shooter</h1>
+            <p class="game-instructions">
+                Não deixe os inimigos invadirem o seu planeta!
+            </p>
+            <p class="game-conttrols">
+                <strong>Controles:</strong>
+                <ul>
+                    <li><strong>W </strong>- Subir</li>
+                    <li><strong>S </strong>- Descer</li>
+                    <li><strong>D </strong>- Atirar</li>
+                </ul>
+            </p>
+            <div class="game-hero-color">
+                <p>Selecione a cor da sua nave:</p>
+                <div class="available-colors">
+                    <button class="btn-color-red" onclick="setHeroColor('red')" aria-label="Vermelho"></button>
+                    <button class="btn-color-blue" onclick="setHeroColor('blue')" aria-label="Azul"></button>
+                    <button class="btn-color-green" onclick="setHeroColor('green')" aria-label="Verde"></button>
+                </div>
+            </div>
+            <button class="game-start-button">
+                Começar
+            </button>
+        </div>
+    </div>
+    <audio src="sound/musica.mp3" preload="auto" autoplay loop id="game-main-music"></audio>
+    <audio src="sound/gameover.mp3" preload="auto" loop id="game-over-music"></audio>
+    <audio src="sound/shot.wav" preload="auto" id="game-shot"></audio>
+    <audio src="sound/explosion.wav" preload="auto" id="game-explosion"></audio>
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>
